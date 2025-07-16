@@ -20,6 +20,7 @@ import AppleCardsCarouselDemo from "@/pages/home/heroContent";
 export default function Home() {
   return (
     <>
+      <Navbar />
       {/* 1. Hero Section - Keep your existing HeroSectionOne */}
       <HeroSectionOne />
 
@@ -28,7 +29,6 @@ export default function Home() {
         <AppleCardsCarouselDemo />
       </section>
 
-    
       {/* 4. Testimonials */}
       <TestimonialsPage />
 

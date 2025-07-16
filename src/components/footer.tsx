@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { Heart } from "lucide-react";
-
+import Image from "next/image";
+import logo from "@/assets/images/maflink.jpg";
 export default function Footer() {
   return (
     <footer className="bg-white/80 backdrop-blur-md border-t border-gray-200/50 dark:bg-slate-900/80 dark:backdrop-blur-md dark:border-slate-700/50 text-gray-800 dark:text-white py-12 mt-16">
@@ -10,8 +11,14 @@ export default function Footer() {
         {/* Left */}
         <div className="space-y-4">
           <div className="flex items-center gap-3">
-            <div className="bg-gradient-to-br from-blue-500 to-green-500 rounded-lg p-2 shadow-lg">
-              <Heart className="w-6 h-6 text-white" />
+            <div className="">
+              <Image
+                src={logo}
+                alt="Logo"
+                width={60}
+                height={60}
+                className="rounded-lg text-center"
+              />
             </div>
             <span className="text-2xl font-bold text-gray-900 dark:text-white">
               MAFLink
